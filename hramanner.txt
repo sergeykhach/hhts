@@ -1,0 +1,13 @@
+1951  npm init -y
+ 1952  npm install --save-dev hardhat        
+ 1953  npx hardhat
+ 1954  npm install --save-dev @openzeppelin/hardhat-upgrades
+ 1955  npm install @openzeppelin/contracts   
+ 1956  npm install @openzeppelin/contracts-upgradeable
+ 1957  cd hhts
+ 1958  npx hardhat clean
+ 1959  npx hardhat compile
+ 1960  clear
+ 1961  npx hardhat test
+
+ 
