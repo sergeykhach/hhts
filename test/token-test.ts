@@ -9,7 +9,7 @@ describe("Upgradeable token", function() {
     const NFTFactory = await ethers.getContractFactory("MyToken");//smart contracty gtnumm enq 
     const token = await upgrades.deployProxy(NFTFactory, [], {//deploy enq anum ham proxin(ira het el mycontracty) argery NFT factorin u initialayzi arg-y qani vor datark a mer mot datark array a  
       initializer: 'initialize',
-     // kind: 'uups',//defaulty transparent patterna
+      kind: 'uups',//defaulty transparent patterna, menak esa tarberutyuny
     }); //tokenin dimeluc dimelu enq proxiin, vori mej 
     await token.deployed(); //arden deploy eghaca
 

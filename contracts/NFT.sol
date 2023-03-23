@@ -8,13 +8,14 @@ import "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URISto
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";//es toghy avaleacnu enq vor modificator initializer ogtagorcenq constructory poxaren
 import "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol"; //uups
 
-contract MyToken is Initializable, ERC721Upgradeable, ERC721URIStorageUpgradeable, OwnableUpgradeable
+contract MyToken is Initializable, ERC721Upgradeable, ERC721URIStorageUpgradeable, OwnableUpgradeable, UUPSUpgradeable 
 {
     using CountersUpgradeable for CountersUpgradeable.Counter;
 
     CountersUpgradeable.Counter private _tokenIdCounter;
-
+    
 // constructor() ERC721("MyToken", "MTK") {} //upgradable contractnery chen karogh constructor unenal, dra hamar ogtagorcum enq taki psevdo konstructory initial...
 
 //initializer- modificator a vercvum a verevic vor mi angam kanchenq constructori nman //sarqum u initilize enq anum construtori nman 
@@ -22,7 +23,7 @@ contract MyToken is Initializable, ERC721Upgradeable, ERC721URIStorageUpgradeabl
         __ERC721_init("MyToken", "MTK");
         __ERC721URIStorage_init();
         __Ownable_init();
-        //__UUPSUpgradeable_init(); 
+        __UUPSUpgradeable_init(); 
     }//sranq el initialize enq anum vor or vladeleci v momont depolya ustanovit ani
 
      function safeMint(address to, string memory uri) public onlyOwner {
@@ -47,5 +48,6 @@ contract MyToken is Initializable, ERC721Upgradeable, ERC721URIStorageUpgradeabl
         return super.tokenURI(tokenId);
     }
 
-   // function _authorizeUpgrade(address newImplementation) internal onlyOwner override {}
-}
+   function _authorizeUpgrade(address newImplementation) internal onlyOwner override {}
+} //es funkcian uupsi mej menak vortev stegh qani vor sagh contracti mej a linelu himnaka funkcianery pity pashtpanvac only owner lini
+//ete tery chi upgrade anum apa tranzakcian het kgna
