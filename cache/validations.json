@@ -1,0 +1,82 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "contracts/Sample.sol:Sample": {
+        "src": "contracts/Sample.sol:5",
+        "version": {
+          "withMetadata": "0d4b6cb9cc3ca7175e54f33c28de48a4ca9748f9b990382b9d4b7ec8fd1fc135",
+          "withoutMetadata": "1ad445de97f8d295eb921eed676c36a3b9c20355f371fc293c2a0a622c2ed5d3",
+          "linkedWithoutMetadata": "1ad445de97f8d295eb921eed676c36a3b9c20355f371fc293c2a0a622c2ed5d3"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Sample",
+            "src": "contracts/Sample.sol:19"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "a",
+            "src": "contracts/Sample.sol:6"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "a",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Sample",
+              "src": "contracts/Sample.sol:6"
+            },
+            {
+              "label": "arr",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)dyn_storage",
+              "contract": "Sample",
+              "src": "contracts/Sample.sol:7"
+            },
+            {
+              "label": "mapp",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "Sample",
+              "src": "contracts/Sample.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.18"
+      }
+    }
+  ]
+}
