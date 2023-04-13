@@ -1,0 +1,16 @@
+import { loadFixture, ethers, expect, time } from "./setup";
+import type { contractiAnuny } from "../typechain-types";
+
+describe("contractiAnuny", function() {
+  async function deploy() {
+    const [owner, receiver] = await ethers.getSigners(); //hashinern enq hanum anun dnum
+
+    const Factory = await ethers.getContractFactory("contractiAnuny");
+    const f = await Factory.deploy();
+  //verevini poxaren compilic heto ern typchain anenq kgrenq nerqeviny
+    //const contractiAnuny(poqratarov sksogh) : contractiAnuny = await Factory.deploy();
+   // await f.deployed();
+
+    return {owner, receiver, contractiAnuny(poqratarov sksogh)}
+  }
+});
