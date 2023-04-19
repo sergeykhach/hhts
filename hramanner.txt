@@ -1,15 +1,24 @@
-1951  npm init -y
- 1952  npm install --save-dev hardhat        
- 1953  npx hardhat
- 1954  npm install --save-dev @openzeppelin/hardhat-upgrades
- 1955  npm install @openzeppelin/contracts   
- 1956  npm install @openzeppelin/contracts-upgradeable
- 1957  cd hhts
- 1958  npx hardhat clean
- 1959  npx hardhat compile
- 1960  clear
- 1961  npx hardhat test
+karevory hashvi arnel hardhat.config.ts um etet en coment a apa --network zkTestnet
 
- npx hardhat coverage -stugum a ardyoq testerov inch tokosnes cackel 
+1.npx hardhat compile --network zkTestnet
 
- 
+2. npx hardhat deploy-zksync --script deploy --network zkTestnet
+
+pr banalin petqa dnel mmaski .envi mej te che chenq kara deploy anenq
+
+========= NOTICE =========
+Request-Rate Exceeded  (this message will not be repeated)
+
+The default API keys for each service are provided as a highly-throttled,       
+community resource for low-traffic projects and early prototyping. rojects and early prototyping.      
+                                     to function, we highly recomme
+While your application will continue to function, we highly recommended improve performance, increase y
+signing up for your own API keys to 
+improve performance, increase your  perks, such as metrics and adva
+request rate/limit and enable other 
+perks, such as metrics and advanced 
+APIs.                               s.io/api-keys/
+
+For more details: https://docs.ethers.io/api-keys/
+==========================
+0x50E7ce5f1A6dD1209B99743b83582A69125Dbd28

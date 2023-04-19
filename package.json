@@ -10,12 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@matterlabs/hardhat-zksync-toolbox": "^0.1.1",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
-    "@openzeppelin/hardhat-upgrades": "^1.22.1",
-    "hardhat": "^2.13.0"
-  },
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.8.2",
-    "@openzeppelin/contracts-upgradeable": "^4.8.2"
-  }
+    
+    "dotenv": "16.0.3",
+    "hardhat": "^2.14.0"
+  } 
 }
