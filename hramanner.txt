@@ -1,24 +1,50 @@
-karevory hashvi arnel hardhat.config.ts um etet en coment a apa --network zkTestnet
+Sarqaca ERC20Permiti functionaly
+MyToken.sol-y bacir
+MyToken.test.ts bacir testum
+Bacir Proxi.sol-y
+MyToken.test.ts bacir testum
 
-1.npx hardhat compile --network zkTestnet
 
-2. npx hardhat deploy-zksync --script deploy --network zkTestnet
+npx hardhat clean
+npx hardhat compile
+npx hardhat test
 
-pr banalin petqa dnel mmaski .envi mej te che chenq kara deploy anenq
 
-========= NOTICE =========
-Request-Rate Exceeded  (this message will not be repeated)
+  MyToken
+{//steghic
+  types: { Permit: [ [Object], [Object], [Object], [Object], [Object] ] },
+  primaryType: 'Permit',
+  domain: {
+    name: 'MyToken',
+    version: '1',
+    chainId: 1337,
+    verifyingContract: '0x5FbDB2315678afecb367f032d93F642f64180aa3'       
+  },
+  message: {
+    owner: '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',
+    spender: '0x70997970C51812dc3A010C7d01b50e0d17dc79C8',
+    value: 15,
+    nonce: 0,
+    deadline: 1682096119
+  }
+}//minchev stegh messagna
+{//steghic
+  r: '0xa9a6e88c088cd3cdfdb9801df8843c8599c888939a3c2b4e74f9a2126f6143c3',
+  s: '0x4f7439cc71affd4374408f85bc643fa996a96c8a4a1be97df2bb462672cb8d0e',
+  v: 28,
+  owner: '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',
+  spender: '0x70997970C51812dc3A010C7d01b50e0d17dc79C8',
+  value: 15,
+  nonce: 0,
+  deadline: 1682096119
+}//minchev stegh en a inch stacanq na vyxode 
+NONCES BigNumber { value: "1" } //nnce mecacav
+ALLOWANCE BEFORE BigNumber { value: "15" } //alowency mecacav
+ALLOWANCE AFTER BigNumber { value: "5" } //inch mnac
+    ✔ should permit (33493ms)
 
-The default API keys for each service are provided as a highly-throttled,       
-community resource for low-traffic projects and early prototyping. rojects and early prototyping.      
-                                     to function, we highly recomme
-While your application will continue to function, we highly recommended improve performance, increase y
-signing up for your own API keys to 
-improve performance, increase your  perks, such as metrics and adva
-request rate/limit and enable other 
-perks, such as metrics and advanced 
-APIs.                               s.io/api-keys/
 
-For more details: https://docs.ethers.io/api-keys/
-==========================
-0x50E7ce5f1A6dD1209B99743b83582A69125Dbd28
+  1 passing (34s)
+
+
+  OZ-um ka es amen inchy...

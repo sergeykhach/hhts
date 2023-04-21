@@ -1,6 +1,8 @@
 import { loadFixture, time } from "@nomicfoundation/hardhat-network-helpers";
+import { anyValue } from "@nomicfoundation/hardhat-chai-matchers/withArgs";
 import { ethers } from "hardhat";
 import { expect } from "chai";
-import "@nomicfoundation/hardhat-chai-matchers"; //dzerov enq avelacnu vor problem chta mek mek win-y
+import type { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
+import "@nomicfoundation/hardhat-chai-matchers";
 
-export { loadFixture, ethers, expect, time };
+export { loadFixture, ethers, expect, time, anyValue, SignerWithAddress };
