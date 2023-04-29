@@ -30,7 +30,7 @@ contract ERC20 is IERC20Metadata {
         return 0;//18
     }
 
-    function totalSupply() external view returns (uint256) {
+    function totalSupply() public view returns (uint256) {
         return _totalSupply;
     }
 
